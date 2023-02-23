@@ -1,100 +1,116 @@
 {
-  "profile": "tabular-data-package",
-  "name": "DEQ Call for Data",
-  "resources": [
-    {
-      "path": "monitoring_location.csv",
-      "profile": "tabular-data-resource",
-      "schema": 
+   "profile":"tabular-data-package",
+   "name":"DEQ Call for Data",
+   "resources":[
       {
-    "fields": [
-        {
-            "name": "monitoring_location_id",
-            "title": "Monitoring Location ID",
-            "type": "string",
-            "constraints": {
-                "required": true,
-                "maxLength": 35
-            }
-        },
-        {
-            "name": "monitoring_location_name",
-            "title": "Monitoring Location Name",
-            "type": "string",
-            "constraints": {
-                "required": true,
-                "maxLength": 255
-            }
-        },
-        {
-            "name": "monitoring_location_type",
-            "title": "Monitoring Location Type",
-            "type": "string",
-            "constraints": {
-                "required": true,
-                "enum": ["NAD27","NAD83","WGS84"]
-            }
-        },
-        {
-            "name": "latitude",
-            "title": "Latitude",
-            "type": "number",
-            "constraints": {
-                "required": true,
-                "minimum": -90,
-                "maximum": 90
-            }
-        },
-        {
-            "name": "longitude",
-            "title": "Longitude",
-            "type": "number",
-            "constraints": {
-                "required": false,
-                "minimum": -180,
-                "maxium": 180
-            }
-        },
-        {
-            "name": "horizontal_datum",
-            "title": "Horizontal Datum",
-            "type": "string",
-            "constraints": {
-                "required": false,
-                "enum": ["NAD27","NAD83","WGS84"]
-            }
-        },
-        {
-            "name": "coordinate_collection_method",
-            "title": "Coordinate Collection Method",
-            "type": "string",
-            "constraints": {
-                "required": false,
-                "enum": ["GPS-unspecified","Interpolation-Map","Unknown"]
-            }
-        },
-        {
-            "name": "county",
-            "title": "County Name",
-            "type": "string",
-            "constraints": {
-                "required": false,
-                "enum": ["MULTNOMAH", "WASHINGTON", "CLACKAMAS"]
-            }
-        },
-        {
-            "name": "state",
-            "title": "State Code",
-            "type": "string",
-            "constraints": {
-                "required": false,
-                "enum": ["OR"]
-            }
-        }
-    ]
-},
-      "format": "csv"
-    }
-}
-  ]
+         "path":"monitoring_location.csv",
+         "profile":"tabular-data-resource",
+         "schema":{
+            "fields":[
+               {
+                  "name":"monitoring_location_id",
+                  "title":"Monitoring Location ID",
+                  "type":"string",
+                  "constraints":{
+                     "required":true,
+                     "maxLength":35
+                  }
+               },
+               {
+                  "name":"monitoring_location_name",
+                  "title":"Monitoring Location Name",
+                  "type":"string",
+                  "constraints":{
+                     "required":true,
+                     "maxLength":255
+                  }
+               },
+               {
+                  "name":"monitoring_location_type",
+                  "title":"Monitoring Location Type",
+                  "type":"string",
+                  "constraints":{
+                     "required":true,
+                     "enum":[
+                        "NAD27",
+                        "NAD83",
+                        "WGS84"
+                     ]
+                  }
+               },
+               {
+                  "name":"latitude",
+                  "title":"Latitude",
+                  "type":"number",
+                  "constraints":{
+                     "required":true,
+                     "minimum":-90,
+                     "maximum":90
+                  }
+               },
+               {
+                  "name":"longitude",
+                  "title":"Longitude",
+                  "type":"number",
+                  "constraints":{
+                     "required":false,
+                     "minimum":-180,
+                     "maxium":180
+                  }
+               },
+               {
+                  "name":"horizontal_datum",
+                  "title":"Horizontal Datum",
+                  "type":"string",
+                  "constraints":{
+                     "required":false,
+                     "enum":[
+                        "NAD27",
+                        "NAD83",
+                        "WGS84"
+                     ]
+                  }
+               },
+               {
+                  "name":"coordinate_collection_method",
+                  "title":"Coordinate Collection Method",
+                  "type":"string",
+                  "constraints":{
+                     "required":false,
+                     "enum":[
+                        "GPS-unspecified",
+                        "Interpolation-Map",
+                        "Unknown"
+                     ]
+                  }
+               },
+               {
+                  "name":"county",
+                  "title":"County Name",
+                  "type":"string",
+                  "constraints":{
+                     "required":false,
+                     "enum":[
+                        "MULTNOMAH",
+                        "WASHINGTON",
+                        "CLACKAMAS"
+                     ]
+                  }
+               },
+               {
+                  "name":"state",
+                  "title":"State Code",
+                  "type":"string",
+                  "constraints":{
+                     "required":false,
+                     "enum":[
+                        "OR"
+                     ]
+                  }
+               }
+            ]
+         },
+         "format":"csv"
+      }
+   ]
 }
