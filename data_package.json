@@ -1,6 +1,6 @@
 {
    "profile":"tabular-data-package",
-   "name":"DEQ Call for Data",
+   "name":"call for data",
    "resources":[
       {
          "path":"monitoring_location.csv",
@@ -55,7 +55,7 @@
                   "constraints":{
                      "required":false,
                      "minimum":-180,
-                     "maxium":180
+                     "maximum":180
                   }
                },
                {
