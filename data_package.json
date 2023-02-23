@@ -32,9 +32,9 @@
                   "constraints":{
                      "required":true,
                      "enum":[
-                        "NAD27",
-                        "NAD83",
-                        "WGS84"
+                        "River/Stream",
+                        "Lake",
+                        "Reservoir"
                      ]
                   }
                },
