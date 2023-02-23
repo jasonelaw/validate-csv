@@ -20,4 +20,4 @@ jobs:
       - name: Validate data
         uses: frictionlessdata/repository@v2
         with:
-          inquiry: inquiry.yaml
+          inquiry: inquiry.yml
