@@ -19,3 +19,5 @@ jobs:
           submodules: true # add this to download submodules
       - name: Validate data
         uses: frictionlessdata/repository@v2
+        with:
+          inquiry: validate-csv/.github/workflows/inquiry.yaml
