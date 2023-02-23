@@ -1,7 +1,6 @@
 {
   "profile": "tabular-data-package",
   "name": "DEQ Call for Data",
-  // here we list the data files in this dataset
   "resources": [
     {
       "path": "monitoring_location.csv",
@@ -96,16 +95,6 @@
 },
       "format": "csv"
     }
-    //,
-    //{
-    //  "path": "data/projects.csv",
-    //  "profile": "tabular-data-resource",
-    //  "schema": "projects.json"
-    //},
-    //{
-    //  "path": "data/results.csv",
-    //  "profile": "tabular-data-resource",
-    //  "schema": "results.json"
-    //}
+}
   ]
 }
