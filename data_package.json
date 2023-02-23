@@ -41,7 +41,7 @@
             "title": "Latitude",
             "type": "number",
             "constraints": {
-                "required": false,
+                "required": true,
                 "minimum": -90,
                 "maximum": 90
             }
